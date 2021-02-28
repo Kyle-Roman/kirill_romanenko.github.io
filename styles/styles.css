@@ -74,10 +74,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.17;
-  letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 
@@ -130,7 +127,6 @@ body {
 
 .specs-subtitle {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -138,7 +134,6 @@ body {
 }
 
 .specs-text {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -232,14 +227,12 @@ body {
 }
 
 .address {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
 
 .address-link {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
