@@ -45,6 +45,7 @@ img {
 
 .list {
   list-style: none;
+  display: flex;
 }
 
 .container {
@@ -118,6 +119,7 @@ img {
 
 .menu {
   display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -131,11 +133,13 @@ img {
   color: var(--accent-color);
 }
 .logo {
+  display: inline-block;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  margin-right: 93px;
 }
 
 .logo-studio-header {
