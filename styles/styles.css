@@ -43,6 +43,7 @@ img {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .list {
@@ -91,10 +92,10 @@ img {
   border: none;
 }
 
-.img {
+/* .img {
   width: 370px;
   height: 294px;
-}
+} */
 
 .current.nav-link {
   color: var(--accent-color);
@@ -157,7 +158,6 @@ img {
   color: var(--accent-color);
 }
 .logo {
-  display: inline-block;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -192,15 +192,14 @@ img {
 /* ================ HERO ================*/
 
 .hero {
-  align-items: center;
   background-color: var(--background-color-accent);
+  text-align: center;
 }
 
 .hero .container {
   padding-top: 200px;
-  padding-bottom: 280px;
-  padding-left: 263px;
-  padding-right: 292px;
+  padding-bottom: 200px;
+  max-width: 696px;
 }
 
 .hero-title {
@@ -208,7 +207,6 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-text-color);
@@ -231,12 +229,13 @@ img {
 
 .specs-list-item {
   flex-basis: calc(100% / 4 -90px);
-  min-width: 270px;
+  width: 270px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
 .specs-subtitle {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
@@ -244,6 +243,7 @@ img {
 }
 
 .specs-text {
+  font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
@@ -272,7 +272,8 @@ img {
 }
 
 .skills-list-item {
-  flex-basis: calc(100% / 3 -30px);
+  width: 370px;
+  /* flex-basis: calc(100% / 3 -30px); */
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -364,8 +365,8 @@ img {
 .examples-img-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -31px;
-  margin-left: -31px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .examples-img-item {
