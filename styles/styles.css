@@ -8,6 +8,7 @@
   --background-color-main: #f5f4fa;
   --background-color-accent: #2f303a;
   --logo-text-main: #000000;
+  --social-logo: #afb1b8;
   --section-pt: 94px;
   --section-pb: 94px;
 }
@@ -119,11 +120,57 @@ img {
   padding-right: 15px;
 }
 
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--logo-text-main);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--accent-text-color);
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-icon {
+  fill: var(--social-logo);
+  width: 20px;
+  height: 20px;
+}
+
 /* ================ END COMPONENTS ================*/
 
 /* ================ HEADER ================*/
 
 .header {
+  width: 1600px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -138,26 +185,8 @@ img {
   align-items: center;
 }
 
-.menu .list {
-  display: flex;
-}
-
-.nav-item:not(:last-child) {
-  display: flex;
-  margin-right: 50px;
-}
-
-.nav-link {
-  text-decoration: none;
-  line-height: 1.17;
-  color: var(--main-text-color);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
 .logo {
+  display: inline-block;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -170,30 +199,94 @@ img {
   color: var(--logo-text-main);
 }
 
-.header-contacts {
+.nav-wrapper {
+  display: block;
+}
+
+.contact-wrapper {
+  display: block;
   margin-left: auto;
 }
 
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  line-height: 1.17;
+  color: var(--main-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: 0 auto;
+  align-items: center;
+}
+
+.header-contacts-mail {
+  display: inline-block;
+  margin-right: 30px;
+  fill: var(--secondary-text-color);
+}
+
+.header-contacts-tel {
+  display: inline-block;
+  fill: var(--secondary-text-color);
+}
+
 .header-contact-link {
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
+  flex-direction: row-reverse;
 }
 
 .header-contact-link:hover,
 .header-contact-link:focus {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
-.header-contacts-mail {
-  margin-right: 50px;
+.header-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
 }
 
+.header-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
 /* ================ END HEADER ================*/
 
 /* ================ HERO ================*/
 
 .hero {
-  background-color: var(--background-color-accent);
+  margin: 0 auto;
+  width: 1600px;
+  background-color: #c4c4c4;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero .container {
@@ -247,21 +340,20 @@ img {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
+
+.specialties-logo {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-color-main);
+}
 /* ================ END SPECIALTIES ================*/
 
 /* ================ SKILLS ================*/
 
 .skills {
   padding-bottom: var(--section-pb);
-}
-
-.skills-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--main-text-color);
 }
 
 .skills-list {
@@ -294,15 +386,6 @@ img {
   margin-top: -30px;
 }
 
-.team-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--logo-text-main);
-}
-
 .team-list-item {
   flex-basis: calc(100% / 4 -30px);
   margin-left: 30px;
@@ -326,6 +409,7 @@ img {
 }
 
 .team-occupation {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -336,7 +420,51 @@ img {
   width: 270px;
   height: 260px;
 }
+
 /* ================ END TEAM ================*/
+
+/* ================ CLIENTS ================*/
+
+.clients {
+  padding-bottom: var(--section-pb);
+  padding-top: var(--section-pt);
+}
+.clients-list {
+  display: flex;
+}
+
+.clients-list-item {
+  display: flex;
+  width: 170px;
+  height: 90px;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--social-logo);
+}
+
+.clients-logo:hover,
+.clients-logo:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients-logo-icon {
+  display: inline-block;
+}
+
+/* ================ END CLIENTS ================*/
 
 /* ================ EXAMPLES ================*/
 
@@ -375,6 +503,12 @@ img {
   margin-left: 30px;
 }
 
+.examples-img-item:hover,
+.examples-img-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .examples-about-wrapper {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -408,6 +542,11 @@ img {
   margin-bottom: 20px;
 }
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
 .logo-studio-footer {
   color: var(--accent-text-color);
 }
@@ -416,6 +555,10 @@ img {
   margin-bottom: 9px;
   line-height: 1.71;
   color: var(--accent-text-color);
+}
+
+.address-wrapper {
+  display: block;
 }
 
 .address-list-item:not(:last-child) {
@@ -432,4 +575,28 @@ img {
   color: var(--accent-color);
 }
 
+.footer-social-title {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.footer-social-list {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.footer .social-list-link {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+}
+
+.footer .social-list-icon {
+  fill: var(--accent-text-color);
+}
 /* ================ END FOOTER ================*/
