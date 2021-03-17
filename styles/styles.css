@@ -540,6 +540,7 @@ img {
   font-size: 16px;
   line-height: 1.86;
   color: var(--secondary-text-color);
+}
 
 .examples-list-wraper {
   position: relative;
@@ -547,23 +548,22 @@ img {
 }
 
 .overlay {
-position: absolute;
-transform: translateY(100%);
-top: 0;
-left: 0;
-height: 100%;
-padding: 24px 63px;
-background-color: var(--accent-color);
-color: var(--accent-text-color);
-overflow: scroll;
+  position: absolute;
+  transform: translateY(100%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 24px 63px;
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  overflow: scroll;
 
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-items:hover .overlay,
 .list-items:focus .overlay {
   transform: translateY(0%);
-
 }
 /* ================ END EXAMPLES ================*/
 
