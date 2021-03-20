@@ -105,6 +105,7 @@ img {
 }
 
 .current.nav-link {
+  position: relative;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -113,12 +114,12 @@ img {
 }
 
 .current.nav-link::after {
+  position: absolute;
   content: "";
-  display: block;
-  width: 48px;
+  bottom: 0;
+  width: 100%;
   height: 4px;
   border-radius: 2px;
-  margin-top: 28px;
   background-color: var(--accent-color);
 }
 
@@ -202,6 +203,7 @@ img {
   display: flex;
   align-items: center;
   justify-items: center;
+  height: 80px;
 }
 
 .menu {
@@ -212,6 +214,8 @@ img {
 
 .logo {
   display: inline-block;
+  padding-bottom: 25px;
+  padding-top: 25px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -229,7 +233,7 @@ img {
 }
 
 .nav-item {
-  display: flex;
+  display: inline-block;
 }
 
 .nav-item:not(:last-child) {
