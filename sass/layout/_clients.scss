@@ -5,8 +5,7 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin-right: -30px;
+  justify-content: center;
   margin-bottom: -30px;
 
   &__item {
@@ -16,7 +15,7 @@
     margin-bottom: 30px;
     flex-basis: calc(100% / 2 - 30px);
 
-    &:not(:last-child) {
+    &:nth-child(2n + 1) {
       margin-right: 30px;
     }
   }

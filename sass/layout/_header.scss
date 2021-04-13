@@ -15,13 +15,17 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  right: 0;
   width: 100vw;
   max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
   z-index: 1;
+  overflow-y: scroll;
   background-color: var(--accent-text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   visibility: hidden;
   pointer-events: none;
@@ -41,7 +45,7 @@
   &__item {
     margin-bottom: 32px;
     font-size: 40px;
-    line-height: 1.17;
+    line-height: 1.18;
     letter-spacing: 0.02em;
   }
 
@@ -52,11 +56,27 @@
   }
 }
 
+.current.mobile-menu__link {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  color: var(--accent-color);
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 4px;
+  //   border-radius: 2px;
+  //   background-color: var(--accent-color);
+  // }
+}
+
 .mobile-menu-close-btn,
 .burger-btn {
   display: block;
-  width: 40px;
-  height: 40px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -97,12 +117,14 @@
 
 .mobile-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
   margin-left: -10px;
 }
 
 .mobile-social-list__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-bottom: 10px;
 }
 
 .mobile-social-list__link {

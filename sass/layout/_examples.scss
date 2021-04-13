@@ -55,6 +55,10 @@
   color: var(--secondary-text-color);
 }
 
+.examples-img-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .examples-list {
     justify-content: center;
