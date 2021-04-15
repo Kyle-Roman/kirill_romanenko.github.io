@@ -236,7 +236,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .social-list__item:not(:last-child) {
@@ -433,7 +432,6 @@ img {
   position: fixed;
   top: 0;
   width: 100vw;
-  max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
   z-index: 1;
