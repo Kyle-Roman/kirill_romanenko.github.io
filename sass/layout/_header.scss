@@ -55,6 +55,10 @@
   }
 }
 
+.mobile-menu__contacts-wrapper {
+  margin-top: auto;
+}
+
 .current.mobile-menu__link {
   position: relative;
   display: flex;
@@ -92,10 +96,6 @@
 .burger-icon {
   width: 16px;
   height: 24px;
-}
-
-.mobile-contacts-list {
-  margin-top: 270px;
 }
 
 .mobile-contacts-list__tel {
