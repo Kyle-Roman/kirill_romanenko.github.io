@@ -75,10 +75,6 @@ img {
   align-items: center;
 }
 
-.hero .container {
-  max-width: 400px;
-}
-
 @media screen and (min-width: 1200px) {
   .hero .container {
     max-width: 700px;
@@ -468,6 +464,10 @@ img {
   pointer-events: auto;
 }
 
+.mobile-menu__contacts-wrapper {
+  margin-top: auto;
+}
+
 .current.mobile-menu__link {
   position: relative;
   display: flex;
@@ -495,10 +495,6 @@ img {
 .burger-icon {
   width: 16px;
   height: 24px;
-}
-
-.mobile-contacts-list {
-  margin-top: 270px;
 }
 
 .mobile-contacts-list__tel {
@@ -712,6 +708,7 @@ img {
 
 .footer-suptitle {
   display: block;
+  margin-top: 60px;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
