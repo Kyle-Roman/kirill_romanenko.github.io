@@ -853,7 +853,7 @@ img {
 }
 
 .specs-list {
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 .specs-list__item {
@@ -1132,7 +1132,6 @@ img {
 
 .examples-img-list {
   margin-top: -30px;
-  margin-left: -30px;
 }
 
 .examples-img-title {
@@ -1160,6 +1159,7 @@ img {
   .examples-img-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
   .examples-img-item {
     flex-basis: calc(100% / 2 - 30px);
